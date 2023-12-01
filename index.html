@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Assets/fooduni_logo.png">
+    <title>Food Universe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <img id="logo" src="./Assets/fooduni_logo.png" alt="logo">
+            <div class="name">
+                <h1>FOOD</h1>
+                <h1>UNiVERSE</h1>
+            </div>
+        </div>
+        <div class="right">
+            <p class="refresh" id="refresh">REFRESH</p>
+            <a href="#todayhead"><p class="today">TODAY'S <span class="yellow"><b>DISH</b></span></p></a>
+        </div>
+    </nav>
+
+    <section id="popup1" class="popup">
+        <div class="box">
+            <div class="nav">
+                <h1 id="mealname"></h1>
+                <img src="./Assets/close.png" id="close" alt="close">
+            </div>
+            <h1 id="property">Ingredients</h1>
+            
+            <ol id="ingr">
+
+            </ol>
+        </div>
+    </section>
+    <section id="popup2" class="popup">
+        <div class="box2">
+            <div class="nav">
+                <h1 id="mealname"></h1>
+                <img src="./Assets/close.png" id="close2" alt="close">
+            </div>
+            <h1 id="property">Instructions</h1>
+            <p id="instru"></p>
+        </div>
+
+    </section>
+
+    <section class="main">
+        <div class="textcontent">
+            <h1 class="heading1"> <span class="red">Cooking</span> Made <span class="yellow">Easy:</span></h1>
+            <h1 class="heading1"><span class="yellow">Explore </span><span class="red">Random</span></h1>
+            <h1 class="heading1"><span class="red">Recipes</span> Daily<span class="yellow">.</span></h1>
+            <p class="desc">Discover easy cooking and fun surprises! Explore <br> different recipes every day, making your kitchen <br> a place of endless flavors.</p>
+            <div class="searchbar">
+                <input type="text" placeholder="Search..." id="search" onchange="getsearchdata()">
+                <a href="#searchhead"><button id="srcbtn" onclick="getsearchdata()">Search</button></a>
+            </div>
+            <p class="total">Total Meals: <span class="red">302</span></p>
+        </div>
+        <img src="./Assets/Burger.png" alt="Burger">
+    </section>
+
+    <h1 class="heading2" id="todayhead"><span class="red">Featured</span> <span class="yellow">Dish</span> of The <span class="red">Day</span></h1>
+    
+    <section id="random">
+        <div class="textcontent randcontent">
+            <h1 id="randomfoodname"></h1>
+            <div class="properties">
+                <p>Category: <span id="caegory" class="yellow"></span></p>
+                <p class="type">Type: <span id="type" class="yellow"></span></p>
+            </div>
+            <div class="details">
+                <div class="smalldiv">
+                    <p id="viewing">View Ingredients</p>
+                    <img src="./Assets/Down.png" alt="down">
+                </div>
+                <div class="smalldiv">
+                    <p id="getins">Get Instructions</p>
+                    <img src="./Assets/Down.png" alt="down">
+                </div>
+            </div>
+            <div class="smalldiv reference">
+                <img src="./Assets/Link.png" alt="reference">
+                <a href="" id="reference" target="_blank">Reference</a>
+            </div>
+        </div>
+        <img id="fetured_dish" src="" alt="Fetured_Dish">
+    </section>
+
+    <h1 class="heading2" id="searchhead">Your Searched items</h1>
+
+    <section id="searchlist">
+        <!-- <div class="food">
+            <div class="back">
+
+            </div>
+            <img src="./Assets/Food1.jpg" id="food" alt="food">
+            <h1 id="title">Big Mac</h1>
+        </div> -->
+    </section>
+
+    <footer>
+        <h1 id="creater" class="heading2"><span class="yellow">Made</span> By <a target="_blank" href="https://yagna123k.github.io/Portfolio-1/"  class="Portfolio"><span class="red">Yagna Kusumanchi</span></a></h1>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>

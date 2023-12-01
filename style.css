@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@500&family=Oswald:wght@300&family=Roboto+Condensed:wght@900&family=Roboto:wght@300;400;500;700&family=Work+Sans&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #0D0D0D;
+    color: white;
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+    overflow-x: hidden;
+}
+
+
+#ingr::-webkit-scrollbar{
+    border: 10px;
+    width: 0.8rem;
+}
+
+#ingr::-webkit-scrollbar-track{
+    background:#222222;
+}
+
+#ingr::-webkit-scrollbar-thumb{
+    background: #F65F5F;
+}
+
+html::-webkit-scrollbar{
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#0D0D0D;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #F65F5F;
+}
+
+nav{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.left{
+    margin-left: 7.5vw;
+    display: flex;
+    align-items: center;
+}
+.left img{
+    width: 10v;
+    height: 10vh;
+    margin-right: 10px;
+}
+.name h1{
+    font-size: 2rem;
+    font-family: Montserrat;
+    line-height: 20%;
+    font-weight: 800;
+}
+
+.right{
+    display: flex;
+    align-items: end;
+    margin-right: 7.5vw;
+}
+
+.right p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.right p:hover{
+    transform: scale(1.05);
+    color: #F65F5F;
+}
+.refresh{
+    margin-right: 25px;
+}
+.right a{
+    text-decoration: none;
+    color: white;
+}
+.red{
+    color: #F65F5F;
+}
+
+.yellow{
+    color: #FDCE77;
+}
+
+.main{
+    display: flex;
+    width: 100vw;
+}
+
+.textcontent{
+    margin-left: 7.5vw;
+    margin-top: 5vh;
+}
+
+.heading1{
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 20%; /* 66.283px */
+}
+.desc{
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+}
+
+#search{
+    width: 510px;
+    height: 60px;
+    flex-shrink: 0;
+    background-color: #0D0D0D;
+    border: 3px solid #FDCE77;
+    border-radius: 20px 45px;
+    color: var(--secondary-secondary-2, #BDBDBD);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 50px;
+    outline: none;
+}
+
+#srcbtn{
+    outline: none;
+    width: 161px;
+    height: 66px;
+    background-color: #F65F5F;
+    border: none;
+    border-radius: 20px 45px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 900;
+    margin-left: -60px;
+    cursor: pointer;
+}
+#srcbtn:hover{
+    transform: scale(1.02);
+}
+
+.total{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.heading2{
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#random{
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+    margin: auto;
+}
+.randcontent{
+    width: 50%;
+    margin: 0;
+}
+#random p{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#viewing, #getins, #reference{
+    cursor: pointer;
+}
+
+.properties, .details{
+    display: flex;
+    align-items: start;
+}
+
+.smalldiv img{
+    width: 30px;
+}
+.smalldiv{
+    display: flex;
+    align-items: center;
+}
+
+#reference{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 5px;
+}
+.reference{
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    width: 80%;
+}
+#randomfoodname{
+    color: #F65F5F;
+    font-family: Montserrat;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 129.9%; /* 62.352px */
+}
+
+.type, #getins{
+    margin-left: 35px
+}
+
+#fetured_dish{
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+#searchlist{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85vw;
+    margin: auto;
+    align-items: center;
+}
+
+.food{
+    width: 18vw;
+    height: 55vh;
+    text-align: center;
+    color: #F65F5F;
+    margin-left:3vw;
+}
+.food img{
+    width: 17vw;
+    height: 17vw;
+    flex-shrink: 0;
+    border-radius: 15px;
+}
+
+.food .back{
+    position: absolute;
+    width: 18vw;
+    height: 35vh;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) -31.53%, rgba(86, 86, 86, 0.25) 303.75%);
+    margin-top: 100px;
+}
+
+.food h1{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading2{
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+}
+
+.Portfolio{
+    text-decoration: none;
+}
+
+#popup1{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color:transparent;
+    z-index: 100;
+    display: none;
+}
+
+.box{
+    height: 70vh;
+    width: 25vw;
+    background-color: #222222;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+.nav img{
+    width: 35px;
+}
+
+#property{
+    text-align: center;
+}
+
+#ingr{
+    width: 80%;
+    height: 60%;
+    overflow-y: scroll;
+    margin: 0 auto;
+}
+
+#mealname{
+    color: #FDCE77;
+}
+
+#property{
+    color: #F65F5F; 
+}
+
+#close{
+    cursor: pointer;
+}
+#close2{
+    padding-top: 25px;
+    cursor: pointer;
+}
+
+.box2{
+    height: 75vh;
+    width: 72vw;
+    background-color: #222222;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+#popup2{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color:transparent;
+    z-index: 100;
+    display: none;
+}
+
+#instru{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 150%;
+    overflow-y: scroll;
+    padding-right: 25px;
+    text-align: justify;
+}
+
+#instru::-webkit-scrollbar{
+    border: 10px;
+    width: 0.8rem;
+}
+
+#instru::-webkit-scrollbar-track{
+    background:#222222;
+}
+
+#instru::-webkit-scrollbar-thumb{
+    background: #F65F5F;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+        width: 100vw;
+        /* Adjust font size for smaller screens */
+    }
+    .right{
+        display: none;
+    }
+    .main img{
+        display: none;
+    }
+
+    nav {
+        flex-direction: column; /* Stack navigation items vertically */
+        text-align: center;
+        margin-top: 2vh;
+    }
+
+    .left {
+        margin: 0;
+        text-align: center;
+    }
+
+    .left img {
+        margin: 0;
+    }
+
+    .textcontent {
+        margin: 5vh auto;
+        text-align: center;
+    }
+
+    .heading1 {
+        font-size: 2rem;
+    }
+
+    .desc {
+        font-size: 1.2rem;
+    }
+
+    .searchbar {
+        align-items: center;
+        width: 80vw;
+    }
+
+    #search {
+        width: 60%;
+        margin-bottom: 1vh;
+        margin-left: 10%;
+    }
+
+    #srcbtn {
+        width: 100px;
+        margin-left: -50px;
+        margin-top: -7px;
+    }
+
+    .total {
+        text-align: center;
+        margin-top: 2vh;
+    }
+
+    #random {
+        flex-direction: column;
+        width: 90vw;
+        margin: auto;
+    }
+
+    .randcontent {
+        width: 100%;
+    }
+
+    #fetured_dish {
+        width: 100%;
+        height: auto;
+    }
+    .food img{
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .food {
+        width: 90vw;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 5vh;
+    }
+    .food .back{
+        display: none;
+    }
+    footer .heading2{
+        font-size: 1.3rem;
+    }
+}
